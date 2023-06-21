@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <span id="players-div">
             <label for="player-1">Player 01: </label>
-            <input type="text" name="player1-name" id="player1-name">   
+            <input type="text" name="player1-name" id="player1-name">  
+            <button>Add</button>
+            
             <label for="player-2">Player 02: </label>
             <input type="text" name="player2-name" id="player2-name">
+            <button>Add</button>
         </span>
 
         <span id="player-turn">
@@ -19,5 +23,19 @@
         </span>
         
     </header>
+
+    <main>
+        <div id="table-frame" class="container">
+            <div id="a0-element" class="element-style-main">X</div>
+            <div id="a1-element" class="element-style-main">X</div>
+            <div id="a2-element" class="element-style-main">X</div>
+            <div id="b0-element" class="element-style-main">X</div>
+            <div id="b1-element" class="element-style-main">X</div>
+            <div id="b2-element" class="element-style-main">X</div>
+            <div id="c0-element" class="element-style-main">X</div>
+            <div id="c1-element" class="element-style-main">X</div>
+            <div id="c2-element" class="element-style-main">X</div>
+        </div>
+    </main>
 </body>
 </html>
