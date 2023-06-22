@@ -1,18 +1,66 @@
+:root{
+    --bg-color: #383838;
+    --font-color: #f9f9f9;
+    --main-color: #77ff00;
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+#players-input{
+    padding: 15px;
+    border: 1px solid #77ff00;
+    background-color: var(--font-color);
+    color: var(--bg-color);
+    border-radius: 15px;
+}
+
+.button-add{
+    padding: 1px 5px;
+    background-color: var(--font-color);
+    border: 2px solid #77ff00;
+}
+.button-add:hover{
+    background-color: #77ff00;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 main{
+    background-color: var(--bg-color);
+}
+
+section#main-table-frame{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container {  display: grid;
+#player-turn{
+    padding: 25px 25px 10px 25px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--font-color);
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+  .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
@@ -21,10 +69,11 @@ main{
       ". . ."
       ". . ."
       ". . .";
+      margin-bottom: 10px;
   }
   
   .element-style-main{
-    border: 1px solid black;
+    border: 1px solid #77ff00;
     width: 150px;
     height: 150px;
     padding: 0px;
@@ -32,4 +81,15 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--font-color);
+    color: var(--bg-color);
+    font-size: 75pt;
+    cursor: pointer;
   }
+  .element-style-main:hover{
+    transition: 0.5s;
+    background-color: #77ff00;
+    scale: 1.025;
+  }
+
+  

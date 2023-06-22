@@ -3,39 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="contorno-do-circulo.png" type="icon">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <span id="players-div">
-            <label for="player-1">Player 01: </label>
-            <input type="text" name="player1-name" id="player1-name">  
-            <button>Add</button>
-            
-            <label for="player-2">Player 02: </label>
-            <input type="text" name="player2-name" id="player2-name">
-            <button>Add</button>
-        </span>
+        <section id="players-input">        
+            <span id="players-div">
 
-        <span id="player-turn">
-            NOW IS YOUR TURN...
-        </span>
-        
+                <label for="player-1">Player 01: </label>
+                <input type="text" name="player1-name" id="player1-name" class="inputs">  
+                <span id="btnplayer1" class="button-add">Add</span>
+
+                <br><br>
+
+                <label for="player-2">Player 02: </label>
+                <input type="text" name="player2-name" id="player2-name">
+                <span id="btnplayer2" class="button-add" class="inputs">Add</span>
+                <br>
+                <button id="assign-names" class="button-add">Assign</button>
+            </span>
+        </section>
     </header>
 
-    <main>
-        <div id="table-frame" class="container">
-            <div id="a0-element" class="element-style-main">X</div>
-            <div id="a1-element" class="element-style-main">X</div>
-            <div id="a2-element" class="element-style-main">X</div>
-            <div id="b0-element" class="element-style-main">X</div>
-            <div id="b1-element" class="element-style-main">X</div>
-            <div id="b2-element" class="element-style-main">X</div>
-            <div id="c0-element" class="element-style-main">X</div>
-            <div id="c1-element" class="element-style-main">X</div>
-            <div id="c2-element" class="element-style-main">X</div>
-        </div>
-    </main>
+<main>
+    <div id="player-turn">NOW IS YOUR TURN...</div>   
+
+    <section id="main-table-frame">
+    
+            <div id="table-frame" class="container">
+                <div id="a0-element" class="element-style-main">X</div>
+                <div id="a1-element" class="element-style-main">X</div>
+                <div id="a2-element" class="element-style-main">X</div>
+                <div id="b0-element" class="element-style-main">X</div>
+                <div id="b1-element" class="element-style-main">X</div>
+                <div id="b2-element" class="element-style-main">X</div>
+                <div id="c0-element" class="element-style-main">X</div>
+                <div id="c1-element" class="element-style-main">X</div>
+                <div id="c2-element" class="element-style-main">X</div>
+            </div>
+    </section>
+</main>
+
 </body>
 </html>
