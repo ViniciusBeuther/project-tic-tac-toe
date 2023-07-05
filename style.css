@@ -43,6 +43,7 @@ header{
 
 main{
     background-color: var(--bg-color);
+    padding-bottom: 50px;
 }
 
 section#main-table-frame{
@@ -52,7 +53,7 @@ section#main-table-frame{
 }
 
 #player-turn{
-    padding: 25px 25px 10px 25px;
+    padding: 10px 25px 10px 25px;
     text-align: center;
     margin-bottom: 15px;
     color: var(--font-color);
@@ -60,7 +61,8 @@ section#main-table-frame{
     font-size: 16pt;
 }
 
-  .container {  display: grid;
+  .container {  
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
@@ -74,8 +76,8 @@ section#main-table-frame{
   
   .element-style-main{
     border: 1px solid #77ff00;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     padding: 0px;
     margin: 0px;
     display: flex;

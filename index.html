@@ -15,34 +15,31 @@
 
                 <label for="player-1">Player 01: </label>
                 <input type="text" name="player1-name" id="player1-name" class="inputs">  
-                <span id="btnplayer1" class="button-add">Add</span>
-
                 <br><br>
-
                 <label for="player-2">Player 02: </label>
                 <input type="text" name="player2-name" id="player2-name">
-                <span id="btnplayer2" class="button-add" class="inputs">Add</span>
-                <br>
+                <br><br>
                 <button id="assign-names" class="button-add">Assign</button>
+                <button id="restartGame" class="button-add">Restart</button>
             </span>
         </section>
     </header>
 
 <main>
-    <div id="player-turn">NOW IS YOUR TURN...</div>   
+    <div id="player-turn">Turn: </div>   
 
     <section id="main-table-frame">
     
             <div id="table-frame" class="container">
-                <div id="a0-element" class="element-style-main">X</div>
-                <div id="a1-element" class="element-style-main">X</div>
-                <div id="a2-element" class="element-style-main">X</div>
-                <div id="b0-element" class="element-style-main">X</div>
-                <div id="b1-element" class="element-style-main">X</div>
-                <div id="b2-element" class="element-style-main">X</div>
-                <div id="c0-element" class="element-style-main">X</div>
-                <div id="c1-element" class="element-style-main">X</div>
-                <div id="c2-element" class="element-style-main">X</div>
+                <div id="a0-element" class="element-style-main" onclick="setAtribute()"></div>
+                <div id="a1-element" class="element-style-main" onclick="setAtribute()"></div>
+                <div id="a2-element" class="element-style-main" onclick="setAtribute()"></div>
+                <div id="b0-element" class="element-style-main" onclick="setAtribute()"></div>
+                <div id="b1-element" class="element-style-main" onclick="setAtribute()"></div>
+                <div id="b2-element" class="element-style-main" onclick="setAtribute()"></div>
+                <div id="c0-element" class="element-style-main" onclick="setAtribute()"></div>
+                <div id="c1-element" class="element-style-main" onclick="setAtribute()"></div>
+                <div id="c2-element" class="element-style-main" onclick="setAtribute()"></div>
             </div>
     </section>
 </main>
