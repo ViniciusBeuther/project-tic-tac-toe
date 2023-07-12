@@ -13,20 +13,26 @@
         <section id="players-input">        
             <span id="players-div">
 
-                <label for="player-1">Player 01: </label>
+                <label for="player-1">Player 01 (X): </label>
                 <input type="text" name="player1-name" id="player1-name" class="inputs">  
                 <br><br>
-                <label for="player-2">Player 02: </label>
+                <label for="player-2">Player 02 (O): </label>
                 <input type="text" name="player2-name" id="player2-name">
                 <br><br>
                 <button id="assign-names" class="button-add">Assign</button>
                 <button id="restartGame" class="button-add">Restart</button>
             </span>
         </section>
+
+        <span id="player-score">
+            <h2>Score (pts)</h2>
+            <h3 id="player-1-footer">Player 01: </h3>
+            <h3 id="player-2-footer">Player 02:</h3>
+        </span>
     </header>
 
 <main>
-    <div id="player-turn">Turn: </div>   
+    <div id="player-turn">Turn: - </div>   
 
     <section id="main-table-frame">
     
@@ -42,7 +48,10 @@
                 <div id="c2-element" class="element-style-main" onclick="setAtribute()"></div>
             </div>
     </section>
+
+
 </main>
+
 
 </body>
 </html>

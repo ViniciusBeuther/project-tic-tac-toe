@@ -94,4 +94,9 @@ section#main-table-frame{
     scale: 1.025;
   }
 
-  
+#player-score{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    margin-left: 15px;
+    padding: 15px;
+}
