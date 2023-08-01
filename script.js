@@ -462,17 +462,17 @@ function checkWinner(mainParentNode, element)   //Conditionals to win
         let allFilled = true;
         for (let i = 0; i < mainParentNode.children.length; i++) 
         {
-          if (mainParentNode.children[i].textContent === '') 
-          {
+            if (mainParentNode.children[i].textContent === '') 
+            {
             allFilled = false;
             break;
-          }
+            }
         }
         
         if (allFilled) 
         {
-          alert('Empate');
-          setTimeout(function() {
+            alert('Empate');
+            setTimeout(function() {
             for (let i = 0; i < mainParentNode.children.length; i++) {
                 mainParentNode.children[i].textContent = '';
                 mainParentNode.children[i].style.pointerEvents = '';
@@ -509,26 +509,12 @@ btnGetNames.addEventListener('click', function (){  //Get the players name and v
     }
 })
 
-btnRestartGame.addEventListener('click', function (){   //Restart game
-    let isComplete = false
-    let restartCount = 0
-    if (restartFlag == 1){
-        restartGame()
-        gameStartFlag == 0
+btnRestartGame.addEventListener("click", function () {
+    if (checkElementsFilled()) {
+    // Check if all elements are filled
+    restartGame();
+        gameStartFlag = 0; // Change this line to '=' instead of '=='
+    } else {
+        alert("You can not restart. Complete all elements first.");
     }
-    else{
-        alert('You can not restart...')
-    }
-    for (let i = 0; i < 10; i++)
-    {   
-            if (mainParentNode.children[i].textContent != '')
-        {
-            restartCount++
-        }
-        }
-
-    if (restartCount == 9)
-    {
-        restartFlag = 0
-    }
-})
+});
