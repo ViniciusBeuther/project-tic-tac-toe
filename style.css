@@ -43,7 +43,9 @@ header{
 
 main{
     background-color: var(--bg-color);
-    padding-bottom: 50px;
+    padding-bottom: 150px;
+    margin-bottom: 0px;
+    height: 100vh;
 }
 
 section#main-table-frame{
